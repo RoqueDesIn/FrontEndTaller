@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<!------ Botones animados ---------->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!------ Resto de estilos ---------->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- css en carpeta -->
+		<link rel="stylesheet" href="../stylesheets/login.css">
+	</head>
+	  
+	<body>
+		<div class="wrapper fadeInDown">
+		<div id="formcontent">
+		
+		<!-- titulo e icono -->
+			<div class="wrapper">
+				<!-- Icon -->
+				  <img src="logo.jpg" id="icon" alt="User Icon" width="40%" height="40%"/>
+				<!-- Tabs Titles -->
+				  <h1>Proyecto taller</h1>
+			</div>
+		  <!-- formulario -->
+			<div class="wrapperrow fadeInDown">
+				<form method="POST">
+					<div class="wrapperrow fadeInDown">
+						<h6>Usuario</h6>
+						<input type="text" id="login" class="fadeIn second" name="login" placeholder="usuario">
+					</div>
+					<div class="wrapperrow fadeInDown">
+						<h6>Contraseña</h6>
+						<input type="password" id="password" class="fadeIn third" name="password" placeholder="contraseña">
+							<br/> <br/>
+					</div>
+					<div class="wrapper fadeInDown">
+						<button class="btn btn-primary" value="Log in" id="go">
+							<span class="spinner-grow spinner-grow-sm" ></span>
+							Entrar
+						</button>
+					</div>
+					<div id="error" class="alert alert-danger fade-in">
+						<strong>¡ERROR!</strong> Usuario o contraseña incorrectos.
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+		<script src="../js/login.js"></script>
+	</body>
+</html>
