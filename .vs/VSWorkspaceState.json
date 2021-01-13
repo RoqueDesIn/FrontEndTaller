@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\js",
+    "\\stylesheets",
     "\\views"
   ],
-  "SelectedNode": "\\views\\resumen.html",
+  "SelectedNode": "\\views",
   "PreviewInSolutionExplorer": false
 }
