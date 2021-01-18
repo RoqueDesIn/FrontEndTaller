@@ -1,6 +1,6 @@
-$(document).ready(function () {
-	//Según se cargue el HTML, consume un servicio GET para obtener
-	//Todos los usuarios y los rellena en la tabla vacía results.
+ï»¿$(document).ready(function () {
+	//Segï¿½n se cargue el HTML, consume un servicio GET para obtener
+	//Todos los usuarios y los rellena en la tabla vacï¿½a results.
 	$.ajax({
 		url: 'https://localhost:44346/Resum',
 		dataType: 'json',
@@ -8,7 +8,7 @@ $(document).ready(function () {
 		contentType: 'application/json',
 		success: function (data, status) {
 			//Por cada elemento dentro del array data, construye una fila (tr)
-			//y añade celdas con los campos de cada elemento del array.
+			//y aï¿½ade celdas con los campos de cada elemento del array.
 			$.each(data, function (i, item) {
 				var $tr = $('<tr>').append(
 					$('<td>').text(item.cant),
@@ -27,7 +27,7 @@ $(document).ready(function () {
 		contentType: 'application/json',
 		success: function (data, status) {
 			//Por cada elemento dentro del array data, construye una fila (tr)
-			//y añade celdas con los campos de cada elemento del array.
+			//y aï¿½ade celdas con los campos de cada elemento del array.
 			$.each(data, function (i, item) {
 				var $tr = $('<tr>').append(
 					$('<td>').text(item.nombre),
@@ -40,5 +40,8 @@ $(document).ready(function () {
 
 		}
 	});
-
+	// botÃ³n Logout
+	$("#logout").click(function () {
+		window.location.replace("../views/login.html");
+	});
 });
