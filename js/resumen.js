@@ -45,3 +45,4 @@
 		window.location.replace("../views/login.html");
 	});
 });
+
